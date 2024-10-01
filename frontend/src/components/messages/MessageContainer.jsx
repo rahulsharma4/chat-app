@@ -26,7 +26,7 @@ useEffect(() => {
   return () => setSelectedConversation(null);
 }, [setSelectedConversation]);
   return (
-    <div className='md:min-w-[450px] flex flex-col'>
+    <div className='md:min-w-[450px] flex flex-col max-[767px]:h-[460px] max-[500px]:h-[550px]'>
       {!selectedConversation ? (
         <NochatSelectedComponent /> 
       ) : (

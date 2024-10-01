@@ -6,7 +6,7 @@ import useGetConversations from '../../hooks/useGetConversation'
 const Conversations = () => {
 const {loading, conversations} = useGetConversations();
   return (
-    <div className='py-2 flex flex-col overflow-auto' style={{
+    <div className='py-2 flex flex-col overflow-auto max-[767px]:flex-row' style={{
       scrollbarWidth: 'thin',
       scrollbarColor: '#121212 #555',
     }}>

@@ -59,3 +59,10 @@ body{
     }
 }
 
+@media (max-width:767px) {
+    .mobile-logoutBtn{
+        position: absolute;
+        right: 16px;
+        top: 28px;
+    }
+}

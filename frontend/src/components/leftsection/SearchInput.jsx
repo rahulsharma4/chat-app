@@ -23,7 +23,7 @@ const { conversations } = useGetConversations()
   }
   return (
     <form onSubmit={handleSubmit} className='flex items-center gap-2'>
-      <input type='text' placeholder='Search...' className='input input-bordered rounded-full'
+      <input type='text' placeholder='Search...' className='input input-bordered rounded-full max-[767px]:w-[50%]'
       value={search}
       onChange={(e) => setSearch(e.target.value)}
       />
