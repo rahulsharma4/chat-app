@@ -16,7 +16,7 @@ const {loading, conversations} = useGetConversations();
     key={conversation._id}
     conversation={conversation}
     emoji= {getRandomEmoji()}
-    lastIdx={idx === conversations.length - 1}
+    // lastIdx={idx === conversations.length - 1}
     />
   ))
  }

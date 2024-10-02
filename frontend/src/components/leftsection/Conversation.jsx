@@ -2,7 +2,7 @@ import React from 'react'
 import useConversation from '../../zustand/useConversation';
 import { useSocketContext } from '../../context/SocketContext';
 
-const Conversation = ({conversation, emoji, lastIdx}) => {
+const Conversation = ({conversation, emoji}) => {
  const {selectedConversation, setSelectedConversation} = useConversation()
 
  const isSelected = selectedConversation?._id === conversation._id;
@@ -27,7 +27,7 @@ const Conversation = ({conversation, emoji, lastIdx}) => {
       </div>
     </div>
 
-    {!lastIdx && <div className='divider my-0 py-0 h-1'/>}
+    {/* {!lastIdx && <div className='divider my-0 py-0 h-1'/>} */}
     </>
   )
 }
